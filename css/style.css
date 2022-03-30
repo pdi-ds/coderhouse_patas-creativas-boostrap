@@ -144,6 +144,10 @@ input {
     padding-left: 17px;
 }
 
+p {
+    color: var(--text-color);
+}
+
 footer {
     border-top: solid 1px var(--bg-color-alternative);
 }
@@ -205,9 +209,6 @@ footer {
 
 .hero-img_mobile {
     clip-path: circle();
-    display: none;
-    max-height: 100%;
-    max-width: 100%;
     object-fit: cover;
 }
 
@@ -596,15 +597,6 @@ a:hover {
         height: 100%;
         width: 100%;
     }
-    .hero-img_mobile {
-        clip-path: circle();
-        display: relative;
-        display: block;
-        height: 100%;
-        margin: 0 0 5% 0;
-        object-fit: cover;
-        width: 100%;
-    }
     .section-services {
         align-items: center;
         display: flex;
@@ -861,15 +853,6 @@ a:hover {
     .hero-img {
         display: none;
         height: 100%;
-        width: 100%;
-    }
-    .hero-img_mobile {
-        clip-path: circle();
-        display: relative;
-        display: block;
-        height: 100%;
-        margin: 0 0 5% 0;
-        object-fit: cover;
         width: 100%;
     }
     .section-services {
