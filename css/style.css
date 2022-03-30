@@ -132,7 +132,7 @@ ul {
 }
 
 a {
-    color: var(--text-color-alternative);
+    color: var(--text-color-alternative) !important;
 }
 
 input {
@@ -150,16 +150,6 @@ footer {
 
 
 /* Elements */
-
-.container {
-    flex-grow: 1;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: calc(100vw - 10%);
-    position: static;
-    width: auto;
-}
 
 .cta-1 {
     background-color: var(--primary-color);
@@ -184,49 +174,6 @@ footer {
 
 
 /* Classes */
-
-.nav-content_wrapper {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 15px 30px 15px 30px;
-}
-
-.logo {
-    display: inline-block;
-    height: 40px;
-    width: auto;
-}
-
-.nav-link_wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-link {
-    display: inline-block;
-}
-
-.nav-link+.nav-link {
-    margin-left: 27px;
-}
-
-.section-hero {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-.hero-content_wrapper {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .hero-text_wrapper {
     display: flex;
@@ -617,13 +564,7 @@ a:hover {
 
 @media screen and (max-width: 991px) {
     .section-hero {
-        align-items: flex-start;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
         min-height: 100vh;
-        padding: 5% 0 5% 0;
     }
     .hero-content_wrapper {
         align-items: center;
@@ -892,25 +833,6 @@ a:hover {
         color: var(--text-color);
         font-size: 11px;
         font-weight: 400;
-    }
-    .nav-content_wrapper {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 15px 30px 15px 30px;
-    }
-    .nav-link_wrapper {
-        display: flex;
-        flex-direction: column;
-        margin: 30px 0 30px 0;
-    }
-    .nav-link {
-        display: block;
-    }
-    .nav-link+.nav-link {
-        margin-left: 0px;
-        margin-top: 15px;
     }
     .section-hero {
         align-items: flex-start;
