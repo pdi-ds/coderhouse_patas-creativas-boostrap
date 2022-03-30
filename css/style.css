@@ -289,10 +289,10 @@ footer {
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    height: 200px;
-    margin: 20px;
+    height: 285px;
+    margin-bottom: 20px;
     padding: 20px;
-    width: 285px;
+    width: 300px;
 }
 
 .review-text {
