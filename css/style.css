@@ -455,6 +455,7 @@ footer {
     object-fit: cover;
     overflow: hidden;
     width: 285px;
+    margin-bottom: 30px;
 }
 
 .contact-content_wrapper {
