@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" aria-label="Tenth navbar example">
-            <div class="container-fluid">
+            <div class="container-sm">
                 <a href="../index.html"><img src="../img/logo.svg" alt="logo" style="width:60px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCustom" aria-controls="navbarCustom" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,51 @@
             </div>
         </nav>
     </header>
-
+    <section>
+        <div class="container-fluid col-xxl-10 text-center">
+            <h2 class="display-2 text-center mb-5">¿Tenés alguna idea en mente?</h2>
+            <form action="POST">
+                <div class="row text-center">
+                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <input type="text" placeholder="Nombre" class="nombre mb-2" name="nombre" id="nombre" required="required" aria-required="true">
+                        <input type="text" placeholder="Apellido" class="apellido" name="apellido" id="apellido" required="required" aria-required="true">
+                    </div>
+                </div>
+                <div class="row text-center mt-3">
+                    <div class="col d-flex flex-column justify-content-center align-items-center">
+                        <input type="email" placeholder="Correo" class="correo mb-2" name="correo" id="correo" required="required" aria-required="true">
+                        <input type="number" placeholder="Teléfono" class="telefono" name="telefono" id="telefono" required="required" aria-required="true">
+                    </div>
+                </div>
+                <div>
+                    <label for="servicios"><h5 class="display-5 text-center mb-5">¿Que servicios se consultan?</h5></label>
+                    <div class="checkbox_wrapper">
+                        <div>
+                            <input type="checkbox" class="servicios" name="servicios[]" id="branding" value="branding">
+                            <label for="servicios-0" class="body2">Branding</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="servicios" name="servicios[]" id="ilustracion" value="ilustracion">
+                            <label for="servicios-1" class="body2">Ilustración</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="servicios" name="servicios[]" id="iconografia" value="iconografia">
+                            <label for="servicios-2" class="body2">Iconografía</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="servicios" name="servicios[]" id="animacion" value="animacion">
+                            <label for="servicios-1" class="body2">Animación</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <textarea type="textarea" placeholder="Especificar más datos..." name="extra" id="extra" required="required" aria-required="true"></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="button cta-1">
+            </form>
+        </div>
+        </div>
+    </section>
     <footer class="mt-5">
         <div class="container-fluid col-xxl-10 align-middle">
             <div class="row">
